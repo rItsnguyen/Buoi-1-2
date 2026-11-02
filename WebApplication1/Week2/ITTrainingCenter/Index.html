@@ -1,0 +1,694 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Training Center</title>
+
+    <link rel="stylesheet" href="styleITTrainingCenter.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body id="home">
+
+    <!-- welcome -->
+    <section class="content-box welcome">
+        <div class="section-title">
+            <span class="circle-icon">
+                ➤
+            </span>
+            <!-- Thêm id="welcome-title" và để trống nội dung -->
+            <h2 id="welcome-title"></h2>
+        </div>
+
+        <!-- Thêm id="welcome-message" và để trống nội dung -->
+        <p id="welcome-message"></p>
+    </section>
+
+    <!-- header -->
+    <header>
+
+        <div class="header-left">
+
+            <img src="Images/LogoEdu.png"
+                 alt="Logo"
+                 class="logo">
+
+            <div class="brand">
+                <h1>IT Training Center</h1>
+                <p>Learn Technology - Build Your Future</p>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#home" class="active">
+                Home
+            </a>
+
+            <a href="#courses">
+                Courses
+            </a>
+
+            <a href="#tuition">
+                Tuition
+            </a>
+
+            <a href="#registration">
+                Registration
+            </a>
+
+        </nav>
+
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search courses...">
+        </div>
+
+    </header>
+
+
+
+    <!-- banner -->
+    <section class="banner">
+
+        <img src="Images/laptop-icon.png"
+             alt="Laptop"
+             class="banner-laptop">
+        <!-- Mở rộng -->
+        <div class="banner-center">
+            <!-- Thêm id="banner-title" -->
+            <h2 id="banner-title">
+                Professional IT Training Programs
+            </h2>
+            <!-- Thêm id="banner-desc" -->
+            <p id="banner-desc">
+                HTML · CSS · JavaScript · ASP.NET MVC · Database
+            </p>
+        </div>
+
+        <div class="banner-slogan">
+
+            Better Skills<br>
+            Brighter Future
+
+        </div>
+
+    </section>
+
+    <!-- page content -->
+    <main>
+
+
+        <!-- left menu -->
+        <aside class="left-menu">
+
+            <h3>Menu</h3>
+
+
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="#tuition">
+                <i class="fa-solid fa-book-open"></i>
+                Course List
+            </a>
+
+            <a href="#tuition">
+                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                Tuition Fee
+            </a>
+
+            <a href="#registration" class="register-left">
+                <i class="fa-solid fa-pen"></i>
+                Register
+            </a>
+
+        </aside>
+
+        <!-- center -->
+        <div class="main-content">
+
+            <!-- welcome -->
+            <section class="content-box welcome">
+
+                <div class="section-title">
+                    <span class="circle-icon">👁</span>
+                    <h2>DOM Reading Comparison</h2>
+                </div>
+
+                <!-- HTML mẫu có chứa một chữ bị ẩn đi -->
+                <div id="demo-content" style="margin-bottom: 15px; padding: 10px; background: #f9f9f9; border: 1px dashed #ccc;">
+                    HTML
+                    <span style="display:none">CSS</span>
+                    JavaScript
+                </div>
+
+                <!-- Nút bấm -->
+                <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                    <button type="button" onclick="showInnerHTML()" style="padding: 8px 15px; background: #168fe5; color: white; border: none; border-radius: 4px; cursor: pointer;">innerHTML</button>
+                    <button type="button" onclick="showInnerText()" style="padding: 8px 15px; background: #1aaa55; color: white; border: none; border-radius: 4px; cursor: pointer;">innerText</button>
+                    <button type="button" onclick="showTextContent()" style="padding: 8px 15px; background: #ff9800; color: white; border: none; border-radius: 4px; cursor: pointer;">textContent</button>
+                </div>
+
+                <!-- Hiển thị kết quả -->
+                <pre id="content-result" style="background:#282c34; color: #abb2bf; padding:10px; border-radius: 4px; min-height: 40px; font-family: Consolas, monospace;"></pre>
+
+            </section>
+
+            <!-- avaiable course -->
+            <section class="content-box"
+                     id="courses">
+
+                <span class="circle-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </span>
+
+                <h2>
+                    Available Courses
+                </h2>
+
+                <div class="course-grid">
+
+                    <!-- HTML -->
+                    <article class="course-card html-card">
+
+                        <img src="Images/what-is-HTML5.jpg"
+                             alt="HTML"
+                             class="course-img">
+
+                        <h3 class="course-name"></h3>
+
+                        <p>
+                            Build modern and responsive
+                            web pages.
+                        </p>
+
+                        <a href="#registration">
+                            Learn More
+                        </a>
+
+                    </article>
+
+                    <!-- JS -->
+                    <article class="course-card js-card">
+
+                        <img src="Images/Screenshot_21-9-2026_83220.png"
+                             alt="JavaScript"
+                             class="course-img">
+
+                        <h3 class="course-name"></h3>
+
+                        <p>
+                            Make your website interactive
+                            and dynamic.
+                        </p>
+
+                        <a href="#registration">
+                            Learn More
+                        </a>
+
+                    </article>
+
+                    <!-- asp.net -->
+                    <article class="course-card net-card">
+
+                        <img src="Images/.Net.jpeg"
+                             alt="ASP.NET MVC"
+                             class="course-img">
+
+                        <h3 class="course-name"></h3>
+
+                        <p>
+                            Build scalable web applications
+                            with ASP.NET MVC.
+                        </p>
+
+                        <a href="#registration">
+                            Learn More
+                        </a>
+
+                    </article>
+
+                    <!-- database -->
+                    <article class="course-card database-card">
+
+                        <img src="Images/Database.jpeg"
+                             alt="Database"
+                             class="course-img">
+
+                        <h3 class="course-name"></h3>
+
+                        <p>
+                            Work with SQL and real-world
+                            databases.
+                        </p>
+
+                        <a href="#registration">
+                            Learn More
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- table form -->
+            <div class="middle-row">
+
+                <!-- course list -->
+                <section class="content-box course-list" id="tuition">
+
+                    <div class="section-title">
+                        <span class="circle-icon">ℹ</span>
+                        <h2>Course Detail</h2>
+                    </div>
+
+                    <button type="button" onclick="showCourseDetail()"
+                            style="padding: 8px 15px; background: #168fe5; color: white;border: none; border-radius: 4px; cursor: pointer;">
+                        View JavaScript Course Info
+                    </button>
+
+                    <!-- Hiển thị kết quả -->
+                    <div id="course-detail"
+                         style="margin-top: 15px; color: #344e67;font-size: 11px; line-height: 1.6;">
+                    </div>
+                </section>
+
+                <!-- Mở rộng -->
+                <section class="content-box course-list" id="tuition">
+                    <div class="section-title">
+                        <span class="circle-icon"><i class="fa-solid fa-list"></i></span>
+                        <h2>Course List</h2>
+                        <!-- Nút Show/Hide -->
+                        <button type="button" id="btn-toggle" onclick="toggleCourseList()" style="margin-left:auto; padding: 5px 10px; cursor: pointer; border-radius:3px; border:1px solid #ccc;">Hide Table</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Course Name</th>
+                                <th>Duration</th>
+                                <th>Tuition Fee</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>HTML & CSS</td>
+                                <td>4 Weeks</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>JavaScript</td>
+                                <td>6 Weeks</td>
+                                <td>$150</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>ASP.NET MVC</td>
+                                <td>8 Weeks</td>
+                                <td>$200</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Database</td>
+                                <td>6 Weeks</td>
+                                <td>$150</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </section>
+
+                <!-- registration -->
+                <section class="content-box registration"
+                         id="registration">
+                    <!--Mở rộng-->
+                    <div class="section-title">
+                        <span class="circle-icon">✎</span>
+                        <h2>Course Registration</h2>
+                    </div>
+
+                    <form>
+                        <div class="form-row">
+                            <label for="fullname">Full Name: <span>*</span></label>
+                            <input type="text" id="fullname" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email: <span>*</span></label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="phone">Phone Number: <span>*</span></label>
+                            <input type="tel" id="phone" placeholder="Enter 10-digit phone number" pattern="[0-9]{10}" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="course">
+                                Course: <span>*</span>
+                                <!-- Vùng hiển thị học phí tạm tính (B) -->
+                                <br><span id="tuition-preview" style="color:#10a847; font-size:11px;"></span>
+                            </label>
+                            <!-- Thêm sự kiện onchange (B và C) -->
+                            <select id="course" required onchange="handleCourseChange()">
+                                <option value="">Select Course</option>
+                                <option value="HTML & CSS">HTML & CSS</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="ASP.NET MVC">ASP.NET MVC</option>
+                                <option value="Database">Database</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <label>Learning Mode:</label>
+                            <div class="radio-group">
+                                <!-- Sửa name và thêm value -->
+                                <label><input type="radio" name="learningMode" value="Online" checked> Online</label>
+                                <label><input type="radio" name="learningMode" value="Offline"> Offline</label>
+                                <label><input type="radio" name="learningMode" value="Hybrid"> Hybrid</label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label>Class Schedule:</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="schedule" checked> Morning</label>
+                                <label><input type="radio" name="schedule"> Afternoon</label>
+                                <label><input type="radio" name="schedule"> Evening</label>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:10px; justify-content:center; margin-top: 15px;">
+                            <!-- Nút Register cũ (Chỉnh lại CSS xíu để nằm ngang) -->
+                            <button type="button" onclick="registerCourse()" style="margin:0; width: 150px;">
+                                ➤ Register Now
+                            </button>
+                            <!-- Nút Reset Mới (Câu D) -->
+                            <button type="reset" onclick="resetResult()" style="margin:0; width: 150px; background: linear-gradient(#e84d4d, #c93030);">
+                                ✖ Reset Form
+                            </button>
+                        </div>
+                        <div id="registration-result" style="margin-top: 20px; color: #065bb0; font-size: 11px; font-weight: bold; line-height: 1.6; text-align: center;"></div>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+            <!-- review -->
+            <section class="content-box reviews-section">
+
+                <div class="section-title">
+
+                    <span class="circle-icon">
+                        ★
+                    </span>
+
+                    <h2>
+                        Student Reviews
+                    </h2>
+
+                </div>
+
+
+                <div class="reviews">
+
+
+                    <!-- review 1 -->
+                    <article class="review-card">
+
+                        <img src="Images/nam1.png"
+                             alt="Student"
+                             class="avatar">
+
+                        <div class="review-info">
+
+                            <h3 class="review-name"></h3>
+
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+
+                            <p>
+                                "The instructors are enthusiastic
+                                and provide excellent support
+                                to the students."
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- review 2 -->
+                    <article class="review-card">
+
+                        <img src="Images/nu.png"
+                             alt="Student"
+                             class="avatar">
+
+                        <div class="review-info">
+
+                            <h3 class="review-name"></h3>
+
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+
+                            <p>
+                                "The course is very practical
+                                and easy to understand."
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- review 3 -->
+                    <article class="review-card">
+
+                        <img src="Images/nam2.png"
+                             alt="Student"
+                             class="avatar">
+
+                        <div class="review-info">
+
+                            <h3 class="review-name"></h3>
+
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+
+                            <p>
+                                "Great training program
+                                with helpful teachers
+                                and good facilities."
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- right aside -->
+        <aside class="right-aside">
+
+
+            <!-- avaiable course -->
+            <section class="side-box courses-side">
+
+                <h3>
+                    Available Courses
+                </h3>
+
+                <ul id="quick-course-list" style="list-style: none;"></ul>
+
+                <a href="#registration" class="side-register">
+                    ♟ Register
+                </a>
+
+            </section>
+
+
+
+            <!-- upgrade -->
+            <section class="side-box upgrade">
+
+                <div class="upgrade-content">
+
+                    <img src="Images/upgrade.png"
+                         alt="Upgrade Skills">
+
+
+                    <div>
+
+                        <span class="new">
+                            NEW
+                        </span>
+
+                        <h3>
+                            Upgrade Your<br>
+                            Skills Today!
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Join our hands-on courses
+                    and get career ready.
+                </p>
+
+
+                <a href="#courses"
+                   class="learn-button">
+
+                    Learn More
+
+                </a>
+
+            </section>
+
+
+
+            <!-- benefit -->
+            <section class="side-box benefits">
+
+
+                <div class="benefit">
+
+                    <img src="images/instructor.png"
+                         alt="Instructor">
+
+                    <div>
+
+                        <h4>
+                            Experienced Instructors
+                        </h4>
+
+                        <p>
+                            Learn from industry experts
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="benefit">
+
+                    <img src="images/schedule.png"
+                         alt="Schedule">
+
+                    <div>
+
+                        <h4>
+                            Flexible Schedule
+                        </h4>
+
+                        <p>
+                            Online, Offline or Hybrid
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="benefit">
+
+                    <img src="images/certificate.png"
+                         alt="Certificate">
+
+                    <div>
+
+                        <h4>
+                            Certificate Provided
+                        </h4>
+
+                        <p>
+                            Get certified after completion
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- future -->
+            <section class="side-box future">
+
+                <div>
+
+                    <h3>
+                        Your Future<br>
+                        Starts Here
+                    </h3>
+
+                    <p>
+                        Skills for a Brighter Tomorrow
+                    </p>
+
+                </div>
+
+
+                <img src="images/future.png"
+                     alt="Future">
+
+            </section>
+
+
+        </aside>
+
+
+    </main>
+
+    <!-- footer -->
+
+    <footer id="footer-info">
+        <p></p>
+        <p></p>
+        <p></p>
+        <div class="footer-line"></div>
+        <p></p>
+    </footer>
+
+    <script src="appITTrainingCenter.js"></script>
+
+</body>
+
+</html>

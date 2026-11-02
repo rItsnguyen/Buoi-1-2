@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Sample Stock Survey</title>
+</head>
+<body style="background-color: #FFFFCE;">
+    <form>
+        <h2 style="text-align: center; color: blue;"> Sample Stock Survey</h2>
+
+        <p><b style="color: #0072ff;">Describe your investment experience</b></p>
+        <input type="radio" name="experience" /> Beginner
+        <input type="radio" name="experience" /> Intermediate
+        <input type="radio" name="experience" /> Expert
+
+
+        <p><b style="color: #0072ff;">Types Of Investments you make</b></p>
+        <input type="checkbox"> Individual Stocks
+        <input type="checkbox"> Options
+        <input type="checkbox"> Mutual Funds
+
+        <p><b style="color: #0072ff;">How do you buy your stocks?</b></p>
+        <select>
+            <option>Online</option>
+            <option>Touch Tone Trading</option>
+            <option>Broker Assisted</option>
+            <option>Other</option>
+        </select>
+
+        <p>
+            <b style="color: #0072ff;">What is your hot stock?</b>
+            <input type="text" />
+        </p>
+
+        <div>
+            <b style="color: #0072ff;">Any Investment Advice for others?</b>
+            <textarea rows="4" cols="50"></textarea>
+            <style>
+                textarea {
+                    overflow: auto;
+                }
+            </style>
+        </div>
+
+        <p>
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+        </p>
+
+    </form>
+</body>
+</html>
